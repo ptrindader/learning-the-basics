@@ -7,4 +7,3 @@ int main(){
     printf("O número escolhido foi %d", n);
     
     return 0;
-}
