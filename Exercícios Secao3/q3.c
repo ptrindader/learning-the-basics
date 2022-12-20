@@ -1,3 +1,4 @@
+//Ler, somar e imprimir 3 números inteiros
 #include <stdio.h>
 int main(){
     int x, y, z, soma;
