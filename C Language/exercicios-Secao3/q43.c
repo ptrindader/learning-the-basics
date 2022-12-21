@@ -17,7 +17,7 @@ int main(){
     comissaoP = total*0.05;
     printf("VALOR TOTAL: R$%.2f \n\n"
         "VALOR À VISTA: R$%.2f\n"
-        "VALOR DA PARCELAaaaaaaaaa (3x sem juros): R$%.2f\n"
+        "VALOR DA PARCELA (3x sem juros): R$%.2f\n"
         "VALOR DA COMISSÃO VENDEDOR (à vista): R$%.2f\n"
         "VALOR DA COMISSÃO VENDEDOR (em 3x): R$%.2f", total, totalAV, parcela3x, comissaoAV, comissaoP
     );
