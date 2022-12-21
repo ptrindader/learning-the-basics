@@ -2,8 +2,9 @@
 #include <stdio.h>
 int main(){
     float kmh, ms;
-    print("Insira uma velocidade em km/h: ");
+    printf("Insira uma velocidade em km/h: ");
     scanf("%f", &kmh);
-    printf("A velocidade de %0.2fkm/h equivale a %0.2fm/s.");
+    ms = kmh/3.6;
+    printf("A velocidade de %0.2f km/h equivale a %0.2f m/s.", kmh, ms);
     return 0;
 }
