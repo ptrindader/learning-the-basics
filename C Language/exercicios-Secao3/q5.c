@@ -7,4 +7,4 @@ int main(){
     x5 = x/5;
     printf("O número %f dividido por 5 é igual a %f.", x, x5);
     return 0;
-}
+} 
