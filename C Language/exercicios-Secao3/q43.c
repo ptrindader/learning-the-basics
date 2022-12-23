@@ -19,7 +19,7 @@ int main(){
         "VALOR À VISTA: R$%.2f\n"
         "VALOR DA PARCELA (3x sem juros): R$%.2f\n"
         "VALOR DA COMISSÃO VENDEDOR (à vista): R$%.2f\n"
-        "VALOR DA COMISSÃO VENDEDOR (em 3x): R$%.2f", total, totalAV, parcela3x, comissaoAV, comissaoP
+        "VALOR DA COMISSÃO VENDEDOR (em 3x sem juros): R$%.2f", total, totalAV, parcela3x, comissaoAV, comissaoP
     );
     return 0;
 }
