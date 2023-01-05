@@ -12,6 +12,14 @@ int main() {
     //printf("O número secreto é %d. Não conta pra ninguém!\n\n", numeroSecreto);
     printf("Qual é o seu chute? \n");
     scanf("%d", &chute);
-    printf("Seu chute foi %d.", chute);
+    printf("\nSeu chute foi %d.\n\n", chute);
 
+    // Igual-duplo é um igual para comparação
+    if(chute == numeroSecreto){
+       printf("PARABÉNS! Você acertou!");  
+    }
+    
+    else {
+        printf("Poxa...você errou...tente novamente!\n");
+    }
 }
