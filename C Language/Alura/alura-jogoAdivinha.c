@@ -20,6 +20,14 @@ int main() {
     }
     
     else {
-        printf("Poxa...você errou...tente novamente!\n");
+
+        if(chute > numeroSecreto){
+            printf("Você errou! Seu chute foi MAIOR que o número secreto...\nTente novamente!");
+        }
+
+        if(chute < numeroSecreto){
+            printf("Você errou! Seu chute foi MENOR que o número secreto...\nTente novamente!");
+        }
+       
     }
 }
