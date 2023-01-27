@@ -3,6 +3,7 @@
 #define NUMERO_DE_TENTATIVAS 5
 
 int main() {
+    
     // Imprime cabecalho do jogo
     printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
     printf("* Bem-vindo ao nosso jogo de adivinhação *\n");
