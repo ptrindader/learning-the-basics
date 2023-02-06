@@ -49,7 +49,8 @@ int main() {
         };
 
         tentativas++;
-        pontos = pontos - (abs(chute - numero_secreto)/2.0);
+        //pontos = pontos - (abs(chute - numero_secreto)/2.0);
+        pontos = pontos - (abs(chute - numero_secreto))/(double)2;
     }
     
     printf("\nPontuação final: %.2f pontos.", pontos);
