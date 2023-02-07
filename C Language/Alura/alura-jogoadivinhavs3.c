@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define NUMERO_DE_TENTATIVAS 5
 
@@ -9,9 +10,17 @@ int main() {
     printf("* Bem-vindo ao nosso jogo de adivinhação *\n");
     printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
 
-    int numero_secreto = 42;
+    int segundos = time(0);
+
+    srand (segundos); 
+    //Muda a "seed" da função (operação matemática) da função rand, tornando esta baseada na variável "segundos". Isso define os números que a função rand retorna como PSEUDOALEATÓRIOS, por terem uma função matemática pré-definida para sua geração.
+
+    int numerogrande = rand();
+
+    int numero_secreto = numerogrande % 100; 
+    //Por pegar o resto de uma divisão por 100, sempre dará um número entre 0 e 99, independente do número gerado.
+
     int chute;
-    printf("chute %d\n", chute);
     int tentativas = 1;
     float pontos = 1000;
 
