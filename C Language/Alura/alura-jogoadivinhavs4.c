@@ -6,10 +6,18 @@
 
 int main() {
     
-    printf("\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
-    printf("* Bem-vindo ao nosso jogo de adivinhação *\n");
-    printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
-
+    printf("                         __/\\__            \n");
+    printf("                         \\    /            \n");
+    printf("                   __/\\__/    \\__/\\__    \n");
+    printf("                   \\      Seja      /      \n");
+    printf("                   /_   Bem-vindx  _\\      \n");
+    printf("                     \\   ao jogo  /        \n");
+    printf("                   __/     da     \\__      \n");
+    printf("                   \\   adivinhação  /      \n");
+    printf("                   /_  __      __  _\\      \n");
+    printf("                     \\/  \\    /  \\/      \n");
+    printf("                         /_  _\\            \n");
+    printf("                           \\/              \n\n");
     
     int segundos = time(0);
     srand (segundos); 
@@ -45,13 +53,15 @@ int main() {
             break;
     }
 
+    printf("VOCÊ ESCOLHEU: Nível %d\n\n", nivel);
+
     for(int i = 1; i <= numerodetentativas; i++){
-        
-        printf(">> TENTATIVA %d\n\n", tentativas);
-        printf("Qual é o seu chute? \n");
+        printf("-=-=-=-=-=-=-=-=-=\n");
+        printf(">> TENTATIVA #%d <<\n", tentativas);
+        printf("-=-=-=-=-=-=-=-=-=\n");
+        printf("Qual é o seu chute?: ");
 
         scanf("%d", &chute);
-        printf("\nSeu chute foi %d.\n", chute);
 
         if (chute < 0) {
 
@@ -63,25 +73,26 @@ int main() {
         int maior = chute > numerosecreto;
 
         if(acertou) {
-            printf("****************************\n");
+            printf("\n\nOpa!\n\n\n");
             break;
         }
         
         else if(maior) {
 
-            printf("Você errou! Seu chute foi MAIOR que o número secreto...\n\nTente novamente!\n\n--------------------- \n");;
+            printf("Você errou! Seu chute foi <<MAIOR>> que o número secreto...\n\nTente novamente!\n\n\n");;
         }
 
         else  {
 
-            printf("Você errou! Seu chute foi MENOR que o número secreto...\n\nTente novamente!\n\n-=-=-=-=-=-=-=-=-=-=-=- \n");;
+            printf("Você errou! Seu chute foi <<MENOR>> que o número secreto...\n\nTente novamente!\n\n\n");;
         };
 
         tentativas++;
         pontos = pontos - abs(chute - numerosecreto)/(double)2;
     }
-    
-    printf("\nFim de jogo!\n\n");
+
+    printf("⟨⟨⟨⟨⟨ Fim de jogo! ⟩⟩⟩⟩⟩");
+    printf("\n");
 
     if(acertou) {
 
