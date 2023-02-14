@@ -10,6 +10,7 @@ int main() {
     printf("* Bem-vindo ao nosso jogo de adivinhação *\n");
     printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
 
+    //srand(time(0));
     int segundos = time(0);
 
     srand (segundos); 
