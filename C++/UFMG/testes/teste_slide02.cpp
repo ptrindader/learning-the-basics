@@ -1,15 +1,18 @@
+#include <cstdlib>
 #include <iostream>
 
-int inc(int x) {
-    return ++x;
-}
-
 int main() {
+    
+    int *ptr_a = nullptr;
+    ptr_a = new int;
+    
+    if (ptr_a == nullptr) {
+        std::cout << "Memoria insuficiente!" << std::endl;
+        exit(1);
+    }
 
-    int a = 10;
-    int b = inc(a);
-    std::cout << a << std::endl;
-    std::cout << b << std::endl;
-    std::cout << &a << std::endl;
-    std::cout << &b << std::endl;
+    std::cout << "Endereco de ptr_a: " << ptr_a << std::endl;
+    *ptr_a = 90;
+    std::cout << "Conteudo de ptr_a: " << *ptr_a << std::endl;
+    delete ptr_a;
 }
