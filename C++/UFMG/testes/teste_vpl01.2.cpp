@@ -9,8 +9,6 @@ int main(){
         char letra = 'a' + i;
         cout << letra << " ";
     }
-
     cout << endl;
-    
     return 0;
 }
