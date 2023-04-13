@@ -1,8 +1,7 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
-
-
 
 int main(){
 
@@ -16,8 +15,11 @@ int main(){
     }
 
     for (int ch: palavra){
-        cout << ch << endl;
+        int asc_code = ch - 'a';
+        ocorrencias[asc_code]++;
     }
     
+    for ()
+
     return 0;
 }
