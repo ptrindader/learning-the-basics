@@ -19,7 +19,12 @@ int main(){
         ocorrencias[asc_code]++;
     }
     
-    for ()
+    for (int i = 0, ie = 26; i < ie; i++){
+        if(ocorrencias[i] != 0){
+            char letra = 'a' + i;
+            cout << letra << " " << ocorrencias[i] << endl;
+        }
+    }
 
     return 0;
 }
