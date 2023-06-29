@@ -1,31 +1,21 @@
 #include <iostream>
+#include <stdexcept>
+
 using namespace std;
 
-class Forma{
-    public:
-    virtual void desenhar(){
-        cout << "Desenhando uma forma!" << endl;
+double divisao (int a, int b){
+    if (b == 0){
+        throw runtime_error("Erro: Divisão por zero.");
     }
-};
-
-class Circulo: public Forma{
-    public:
-    void desenhar(){
-        cout << "Desenhando um circulo!" << endl;
-    }
-};
-
-class Retangulo: public Forma{
-    public:
-    void desenhar(){
-        cout << "Desenhando um circulo!" << endl;
-    }
-};
+    return (double) a/b;
+}
 
 int main(){
-    Forma *f1 = new Retangulo
-    Forma *f2 = new Circulo
+    try {
+        double d = divisao(4,0);
+        cout << d << endl;
 
-    f1->desenhar();
-    f2->desenhar();
+    } catch (const runtime_error& e){
+        cerr << e.what() << endl;
+    }
 }
