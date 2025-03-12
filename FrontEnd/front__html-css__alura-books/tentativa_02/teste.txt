@@ -53,3 +53,6 @@ colocados em diferentes alturas, etc.
 >> Vídeo 02 - 
 Criando o Menu Hambúrguer
 
+Comentário que eu devia ter feito anteriormente: reset.css é ESSENCIAL. Mudou muita coisa no projeto que estavam
+me incomodando.
+
