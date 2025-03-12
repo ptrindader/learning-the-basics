@@ -1,0 +1,55 @@
+Curso Alurabooks
+
+Aula 01 - Aplicando a metodologia mobile-first
+
+Video 01 - A base do projeto
+Explicando algumas das tags usadas:
+
+<meta charset="UTF-8"> é usada para que o navegador interprete corretamente 
+qual a codificação a ser usada para evitar problemas de impressão de caracteres
+especiais, como o cedilha (ç).
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> informa
+o tamanho da tela do dispositivo (width = device-width) além de definir que a tela
+não esteja com zoom (initial-scale=1.0).
+
+<link rel="stylesheet" href="./styles/style.css"> define a relação do html com o
+arquivo CSS (o estilo da página).
+
+Já no style.css, o :root é onde definimos as variáveis do código CSS.
+
+//////////////////
+
+> Aula 02 - Criando Header, Flexbox e @import
+
+>> Vídeo 01
+Header, Flexbox e @import
+
+A <span> é uma tag ideal para utilizar em ícones, podendo ser estilizada da forma desejada sem alterar a sua estrutura.
+
+A propriedade //display: flex// transforma o cabeçalho em
+um flex-container e os elementos dentro dele (no caso, os containers)
+em flex-itens, com novas propriedades, dentre elas a "justify-content". Aqui,
+nós iremos usa-la como "space-between".
+
+A propriedade align-itens é usada para, obviamente, alinhar itens. Porém.,
+
+A propriedade //display: inline-block// permite que elementos fiquem um ao lado do outro
+mas, ao mesmo tempo, permite que você defina o tamanho de cada um deles. Nos outros tipos de
+elementos "inline" não é possível definir a largura (width) e a altura (height), eles apenas
+fazem que os elementos se ajustem automaticamente ao conteúdo, lado a lado.
+
+A propriedade //display: block// é comparada com a //display: inline-block// da seguinte forma: temos uma sala,
+vista de cima e com o piso pautado como um caderno (linhas horizontais). A propriedade //display: block// é
+como uma mesa que ocupa toda uma linha da sala, sem possibilidade de se acrescentar elementos ao lado dela.
+Já a propriedade //display: inline-block// são como cadeiras, que são colocadas lado a lado e que você pode
+definir o tamanho do espaço que elas irão ocupar de largura e altura.
+
+A propriedade //display: flex//, para complementar a analogia, seria como um sofá modular, que pode ter seus
+módulos reorganizados, redistribuidos, colocados todos num canto, colocados todos espaçados uniformemente,
+colocados em diferentes alturas, etc.
+
+
+>> Vídeo 02 - 
+Criando o Menu Hambúrguer
+
