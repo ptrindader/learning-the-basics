@@ -1,0 +1,35 @@
+Curso Alurabooks
+
+Aula 01 - Aplicando a metodologia mobile-first
+
+Video 01 - A base do projeto
+Explicando algumas das tags usadas:
+
+<meta charset="UTF-8"> é usada para que o navegador interprete corretamente 
+qual a codificação a ser usada para evitar problemas de impressão de caracteres
+especiais, como o cedilha (ç).
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> informa
+o tamanho da tela do dispositivo (width = device-width) além de definir que a tela
+não esteja com zoom (initial-scale=1.0).
+
+<link rel="stylesheet" href="./styles/style.css"> define a relação do html com o
+arquivo CSS (o estilo da página).
+
+//////////////////
+
+Já no style.css, o :root é onde definimos as variáveis do código CSS.
+
+
+> Aula 02 - Criando Header, Flexbox e @import
+
+>> Vídeo 01 - Header, Flexbox e @import
+
+A <span> é uma tag ideal para utilizar em ícones, podendo ser estilizada da forma desejada sem alterar a sua estrutura.
+
+A propriedade //display: flex// transforma o cabeçalho em
+um flex-container e os elementos dentro dele (no caso, os containers)
+em flex-itens, com novas propriedades, dentre elas a "justify-content". Aqui,
+nós iremos usa-la como "space-between".
+
+A propriedade align-itens é usada para, obviamente, alinhar itens. Porém.,

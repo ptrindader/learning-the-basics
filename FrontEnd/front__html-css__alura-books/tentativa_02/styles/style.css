@@ -1,3 +1,5 @@
+@import url(./header.css);
+
 :root{
     --fundo-cinza: #EBECEE;
     --branco: #FFFFFF;
@@ -5,4 +7,9 @@
     --laranja: #EB9B00;
 
     --fonte-principal: "Poppins";
+}
+
+body{
+    background-color: var(--fundo-cinza);
+    font-family: var(--fonte-principal);
 }
