@@ -72,4 +72,4 @@ Barra de Pesquisa
 Uma curiosidade: para colocar a lupa ao lado da barra de pesquisa, é necessário acrescentar
 a imagem da lupa na propriedade background do placeholder da barra. Várias lupas irão se repetir,
 então ao lado da url, na mesma propriedade, deve-se colocar "no-repeat".
-Depois disso, para que 
+Depois disso, para que AAA
