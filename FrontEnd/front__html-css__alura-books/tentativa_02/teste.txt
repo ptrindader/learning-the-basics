@@ -56,3 +56,20 @@ Criando o Menu Hambúrguer
 Comentário que eu devia ter feito anteriormente: reset.css é ESSENCIAL. Mudou muita coisa no projeto que estavam
 me incomodando.
 
+Uma dúvida que tive também foi em relação às propriedades //position: relative// e //position: absolute//.
+
+
+>> Vídeo 03 - 
+Customizando o Menu Hambúrguer
+
+Estilizamos o menu-hamburguer de várias formas. A forma que mais me deixou em dúvida de como fazer foi
+a que usa propriedades do CSS pra recortar o texto, tornando-o transparente e fazendo com que ele, assim, assuma
+o preenchimento de um background definido. No caso, esse background é o Azul degradê.
+
+>> Vídeo 06
+Barra de Pesquisa
+
+Uma curiosidade: para colocar a lupa ao lado da barra de pesquisa, é necessário acrescentar
+a imagem da lupa na propriedade background do placeholder da barra. Várias lupas irão se repetir,
+então ao lado da url, na mesma propriedade, deve-se colocar "no-repeat".
+Depois disso, para que 
