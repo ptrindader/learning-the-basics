@@ -73,3 +73,57 @@ Uma curiosidade: para colocar a lupa ao lado da barra de pesquisa, é necessári
 a imagem da lupa na propriedade background do placeholder da barra. Várias lupas irão se repetir,
 então ao lado da url, na mesma propriedade, deve-se colocar "no-repeat".
 Depois disso, para que AAA
+
+//////////////////
+
+> Aula 03 - Integrando o Carrossel com SwiperJS
+
+>> Vídeo 01
+Carrossel com SwiperJS
+
+Para começar, temos duas tags para copiar: 
+1º: O <link rel="stylesheet" href="//link">, para colocar no <head>, que é uma referência a uma folha de estilos externa.
+Ele deve ser colocado ANTES do stylesheet padrão por questão de sobreposição;
+
+2º: O <script src="//link">, para colocar no final do <body>.
+
+Depois, temos o Swiper em si no corpo, que é o <div class="swiper">.
+Dentro dele, temos várias divs com classes definidas para cada um dos elementos do Swiper, dentre eles:
+
+- Wrapper: os slides em si.
+- Pagination: a paginação, que são, por padrão, aquelas bolinhas que demonstram quantos slides têm.
+- Button Prev e Next: botões para voltar e passar os slides pelo clique, caso você queira.
+- Scrollbar: literalmente scrollbar, lkklkllkk.
+
+Por fim, existe uma última tag <script> que serve para inicializar o Swiper.
+Ela deve ser colocada no fim do corpo assim como o <script src="//link">, mas DEPOIS dele,
+necessariamente. O script, com os parâmetros que eu escolhi no site da documentação, é:
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        centeredSlides: true,
+        spaceBetween: 30,
+        slidesPerView: 2,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+</script>
+
+Eu defini os parâmetros de acordo com a documentação. São eles:
+
+- centeredSlides: faz com que, ao passar os slides, o próximo se centralize automaticamente.
+- spaceBetween: espaço entre um slide e outro.
+- slidesPerView: quantos slides aparecem a cada "página".
+- pagination: define subparâmetros para a paginação. (ex.: el: indica a classe do elemento paginação no corpo do código; type: define o tipo de paginação.)
+- autoplay: os slides passam automaticamente e define subparâmetros para essa caracteristica. (ex.: delay: tempo entre um slide e outro; disableOnInteraction: desligar
+o autoplay após o usuário interagir)
+- loop: faz os slides entrarem em loop.
+
