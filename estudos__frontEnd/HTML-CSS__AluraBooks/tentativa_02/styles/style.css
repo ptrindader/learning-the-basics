@@ -1,12 +1,15 @@
 @import url(./header.css);
 @import url(./banner.css);
 @import url(./carrossel.css);
+@import url(./card.css);
+
 
 :root{
     --fundo-cinza: #EBECEE;
     --branco: #FFFFFF;
     --azul-degrade: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
     --laranja: #EB9B00;
+    --preto: rgba(0, 0, 0, 0.85);
 
     --fonte-principal: "Poppins";
 }
@@ -14,4 +17,5 @@
 body{
     background-color: var(--fundo-cinza);
     font-family: var(--fonte-principal);
+    line-height: 1.5em;
 }
