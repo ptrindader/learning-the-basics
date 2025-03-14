@@ -126,4 +126,3 @@ Eu defini os parâmetros de acordo com a documentação. São eles:
 - autoplay: os slides passam automaticamente e define subparâmetros para essa caracteristica. (ex.: delay: tempo entre um slide e outro; disableOnInteraction: desligar
 o autoplay após o usuário interagir)
 - loop: faz os slides entrarem em loop.
-
