@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .topicos {
     background: var(--azul-degrade);
     text-align: center;
@@ -26,4 +27,8 @@
     color: var(--branco);
     text-decoration: none;
     font-weight: 700;
+=======
+.topicos__titulo{
+    
+>>>>>>> e1558b38ec0bc4cf71e339d41e430923bc5fa690
 }
