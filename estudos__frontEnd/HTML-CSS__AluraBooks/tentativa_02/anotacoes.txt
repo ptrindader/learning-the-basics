@@ -1,0 +1,128 @@
+Curso Alurabooks
+
+Aula 01 - Aplicando a metodologia mobile-first
+
+Video 01 - A base do projeto
+Explicando algumas das tags usadas:
+
+<meta charset="UTF-8"> é usada para que o navegador interprete corretamente 
+qual a codificação a ser usada para evitar problemas de impressão de caracteres
+especiais, como o cedilha (ç).
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> informa
+o tamanho da tela do dispositivo (width = device-width) além de definir que a tela
+não esteja com zoom (initial-scale=1.0).
+
+<link rel="stylesheet" href="./styles/style.css"> define a relação do html com o
+arquivo CSS (o estilo da página).
+
+Já no style.css, o :root é onde definimos as variáveis do código CSS.
+
+//////////////////
+
+> Aula 02 - Criando Header, Flexbox e @import
+
+>> Vídeo 01
+Header, Flexbox e @import
+
+A <span> é uma tag ideal para utilizar em ícones, podendo ser estilizada da forma desejada sem alterar a sua estrutura.
+
+A propriedade //display: flex// transforma o cabeçalho em
+um flex-container e os elementos dentro dele (no caso, os containers)
+em flex-itens, com novas propriedades, dentre elas a "justify-content". Aqui,
+nós iremos usa-la como "space-between".
+
+A propriedade align-itens é usada para, obviamente, alinhar itens. Porém.,
+
+A propriedade //display: inline-block// permite que elementos fiquem um ao lado do outro
+mas, ao mesmo tempo, permite que você defina o tamanho de cada um deles. Nos outros tipos de
+elementos "inline" não é possível definir a largura (width) e a altura (height), eles apenas
+fazem que os elementos se ajustem automaticamente ao conteúdo, lado a lado.
+
+A propriedade //display: block// é comparada com a //display: inline-block// da seguinte forma: temos uma sala,
+vista de cima e com o piso pautado como um caderno (linhas horizontais). A propriedade //display: block// é
+como uma mesa que ocupa toda uma linha da sala, sem possibilidade de se acrescentar elementos ao lado dela.
+Já a propriedade //display: inline-block// são como cadeiras, que são colocadas lado a lado e que você pode
+definir o tamanho do espaço que elas irão ocupar de largura e altura.
+
+A propriedade //display: flex//, para complementar a analogia, seria como um sofá modular, que pode ter seus
+módulos reorganizados, redistribuidos, colocados todos num canto, colocados todos espaçados uniformemente,
+colocados em diferentes alturas, etc.
+
+
+>> Vídeo 02 - 
+Criando o Menu Hambúrguer
+
+Comentário que eu devia ter feito anteriormente: reset.css é ESSENCIAL. Mudou muita coisa no projeto que estavam
+me incomodando.
+
+Uma dúvida que tive também foi em relação às propriedades //position: relative// e //position: absolute//.
+
+
+>> Vídeo 03 - 
+Customizando o Menu Hambúrguer
+
+Estilizamos o menu-hamburguer de várias formas. A forma que mais me deixou em dúvida de como fazer foi
+a que usa propriedades do CSS pra recortar o texto, tornando-o transparente e fazendo com que ele, assim, assuma
+o preenchimento de um background definido. No caso, esse background é o Azul degradê.
+
+>> Vídeo 06
+Barra de Pesquisa
+
+Uma curiosidade: para colocar a lupa ao lado da barra de pesquisa, é necessário acrescentar
+a imagem da lupa na propriedade background do placeholder da barra. Várias lupas irão se repetir,
+então ao lado da url, na mesma propriedade, deve-se colocar "no-repeat".
+Depois disso, para que AAA
+
+//////////////////
+
+> Aula 03 - Integrando o Carrossel com SwiperJS
+
+>> Vídeo 01
+Carrossel com SwiperJS
+
+Para começar, temos duas tags para copiar: 
+1º: O <link rel="stylesheet" href="//link">, para colocar no <head>, que é uma referência a uma folha de estilos externa.
+Ele deve ser colocado ANTES do stylesheet padrão por questão de sobreposição;
+
+2º: O <script src="//link">, para colocar no final do <body>.
+
+Depois, temos o Swiper em si no corpo, que é o <div class="swiper">.
+Dentro dele, temos várias divs com classes definidas para cada um dos elementos do Swiper, dentre eles:
+
+- Wrapper: os slides em si.
+- Pagination: a paginação, que são, por padrão, aquelas bolinhas que demonstram quantos slides têm.
+- Button Prev e Next: botões para voltar e passar os slides pelo clique, caso você queira.
+- Scrollbar: literalmente scrollbar, lkklkllkk.
+
+Por fim, existe uma última tag <script> que serve para inicializar o Swiper.
+Ela deve ser colocada no fim do corpo assim como o <script src="//link">, mas DEPOIS dele,
+necessariamente. O script, com os parâmetros que eu escolhi no site da documentação, é:
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        centeredSlides: true,
+        spaceBetween: 30,
+        slidesPerView: 2,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    });
+</script>
+
+Eu defini os parâmetros de acordo com a documentação. São eles:
+
+- centeredSlides: faz com que, ao passar os slides, o próximo se centralize automaticamente.
+- spaceBetween: espaço entre um slide e outro.
+- slidesPerView: quantos slides aparecem a cada "página".
+- pagination: define subparâmetros para a paginação. (ex.: el: indica a classe do elemento paginação no corpo do código; type: define o tipo de paginação.)
+- autoplay: os slides passam automaticamente e define subparâmetros para essa caracteristica. (ex.: delay: tempo entre um slide e outro; disableOnInteraction: desligar
+o autoplay após o usuário interagir)
+- loop: faz os slides entrarem em loop.
