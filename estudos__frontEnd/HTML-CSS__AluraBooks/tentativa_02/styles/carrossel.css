@@ -7,6 +7,11 @@
     padding: 1em 0 0.5em 0;
 }
 
+.carrossel{
+    position: relative;
+    z-index: 1;
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
