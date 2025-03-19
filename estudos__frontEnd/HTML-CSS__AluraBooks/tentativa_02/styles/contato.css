@@ -1,0 +1,30 @@
+.contato {
+    background-color: var(--branco);
+}
+
+.contato__titulo {
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1.5em 1.5em 1em 1.5em;
+}
+
+.contato__texto {
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+    padding: 0em 1.5em;
+}
+
+.contato__email{
+    background: url(../icons/Email.svg);
+    background-repeat: no-repeat;
+    padding: 1em;
+    border-radius: 24px;
+    
+}
