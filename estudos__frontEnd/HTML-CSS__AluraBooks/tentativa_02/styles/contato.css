@@ -40,3 +40,10 @@
     padding-left: 3em;
     transform: translate3d(0, 1px, 0)
 }
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+    }
+
+}

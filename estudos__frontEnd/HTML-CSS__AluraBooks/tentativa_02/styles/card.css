@@ -72,3 +72,19 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    .card__botoes{
+        margin-top: 1em;
+    }
+
+    .descricao{
+        width: auto;
+        margin-right: 1em;
+    }
+}

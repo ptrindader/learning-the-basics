@@ -1,4 +1,4 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 2em;
     height: 2em;
     background-image: url(../icons/Menu.svg);
@@ -7,7 +7,7 @@
     display: inline-block;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -15,17 +15,17 @@
     position: relative;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
 }
 
-.container__imagem{
+.container__imagem {
     padding: 1em;
     align-items: center;
 }
 
-.lista-menu{
+.lista-menu {
     z-index: 10;
     display: none;
     position: absolute;
@@ -35,43 +35,120 @@
 
 }
 
-.container__botao:checked~.lista-menu{
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
 .lista-menu__titulo,
-.lista-menu__item{
+.lista-menu__item {
     background-color: var(--branco);
     padding: 1em;
 }
 
-.lista-menu__titulo{
+.lista-menu__titulo {
     color: var(--laranja);
     font-weight: 700;
 }
 
-.lista-menu__link{
+.lista-menu__link {
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     /*Define a cor do texto como transparente. Sem cor.*/
-    
+
     background: var(--azul-degrade);
     /*Cria um fundo que, nesse caso, tem um
     azul degradê como cor.*/
-    
+
     -webkit-background-clip: text;
     /*Recorta o texto. Faz com que, onde há texto,
     seja vazado. Deixando da cor do fundo (background)*/
-    
+
     background-clip: text;
     /*Explicação da Luri da Alura: Este é o mesmo conceito
     do recorte, mas é uma versão mais geral que funciona em
     outros navegadores também. Ele garante que o efeito de recorte
     da cortina se aplique ao texto, independentemente do navegador
-    que a pessoa está usando.*/  
+    que a pessoa está usando.*/
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        transform: translate3d(0, 4px, 0)
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+        justify-items: space-between;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+
+    .logo__aluraBooks{
+        margin-left: 5em;
+    }
+
+    .container__icones{
+        justify-content: space-between;
+        gap: 2em;
+        margin-right: 5em;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+        /* Ainda falta ajustar esse hover */
+    }
+}
+
+/*Isso é uma MEDIA QUERY, usada para aplicar estilos diferentes para determinados
+tamanhos de tela.*/
