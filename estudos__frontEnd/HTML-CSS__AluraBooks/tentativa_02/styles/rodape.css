@@ -1,4 +1,38 @@
+.rodape{
+    display: flex;
+    margin: 1em;
+}
+
 .rodape__texto{
-    padding: 1em 2em;
     color: var(--preto);
+}
+
+.rodape__colunas{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        margin: 2em 1.5em;
+    }
+    
+    .rodape__texto{
+        margin-right: 4em;
+    }
+    
+    .rodape__colunas{
+        display: flex;
+    }
+
+    .coluna__titulo{
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    .coluna__item{
+        padding: 1em;
+        align-self: center;
+        /* Encapsular o conteúdo de .coluna__item em uma tag <p> */
+    }
 }
