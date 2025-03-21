@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    height: auto;
 }
 
 .container {
@@ -32,7 +33,6 @@
     top: 100%;
     width: 60vw;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
-
 }
 
 .container__botao:checked~.lista-menu {
@@ -110,6 +110,19 @@
     .opcoes__item {
         padding: 0 1em;
         text-transform: uppercase;
+        align-content: center;
+        height: 70px;
+    }
+
+    .opcoes__item:hover {
+        background: var(--azul-degrade);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .opcoes__item .lista-menu {
+        display: none;
     }
 
     .opcoes__link {
@@ -121,32 +134,42 @@
         display: none;
     }
 
-    .cabecalho__menu-hamburguer{
+    .cabecalho__menu-hamburguer {
         display: none;
     }
 
-    .logo__aluraBooks{
+    .logo__aluraBooks {
         margin-left: 5em;
     }
 
-    .container__icones{
+    .container__icones {
         justify-content: space-between;
         gap: 2em;
         margin-right: 5em;
     }
 
-    .opcoes__botao{
+    .opcoes__botao {
         display: none;
     }
 
-    .opcoes__botao:checked~.lista-menu{
-        display: block;
-        width: auto;
+    .lista-menu {
+        transform: translate3d(30px, -10px, 0);
     }
 
-    .lista-menu__item:hover{
+    .lista-menu__item:hover {
         background: var(--azul-degrade);
-        /* Ainda falta ajustar esse hover */
+
+        .lista-menu__link {
+            background: none;
+            /*Tive que setar o background pra none porque o azul-degradê é um background, não um background-COLOR*/
+            background-clip: text;
+            background-color: var(--branco);
+        }
+    }
+
+    .opcoes__menu-botao:hover .lista-menu {
+        display: block;
+        width: auto;
     }
 }
 

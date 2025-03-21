@@ -42,8 +42,24 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .contato{
+    .contato {
         display: flex;
+        gap: 1em;
+        padding: 2em 10em;
     }
 
+    .contato__descricao{
+        width: 50%;
+    }
+
+    .contato__email {
+        width: 50%;
+        height: 25%;
+        align-self: center;
+        box-sizing: border-box;
+    }
+
+    .contato__email::-webkit-input-placeholder {
+        line-height: fit-content;
+    }
 }
