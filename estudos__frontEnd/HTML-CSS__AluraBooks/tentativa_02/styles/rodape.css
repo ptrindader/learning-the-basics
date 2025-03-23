@@ -31,8 +31,19 @@
     }
 
     .coluna__item{
-        padding: 1em;
+        align-items: center;
+        display: flex;
+        padding: 1em 0;
         align-self: center;
         /* Encapsular o conteúdo de .coluna__item em uma tag <p> */
+    }
+
+    .item__nome{
+        margin-left: 1em;
+        color: var(--cinza-escuro);
+    }
+
+    .coluna{
+        margin-right: 2em;
     }
 }

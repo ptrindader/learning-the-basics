@@ -27,7 +27,7 @@
 .swiper-pagination {
     position: initial;
     margin: .5em 0;
-    align-items: center;
+    align-items: right;
 }
 
 .swiper-slide {
@@ -40,7 +40,7 @@
     }
 
     .swiper-pagination{
-        margin: 2em 0 3em 0;
+        margin: 1em 0;
     }
 
     .swiper{
@@ -49,8 +49,12 @@
 
     .swiper-button-next,
     .swiper-button-prev{
+        color: var(--branco);
         display: block;
         top: 60%;
+        background: url(../icons/Ellipse\ 3.svg) no-repeat;
+        background-position: center;
+        padding: .5em;
     }
     
 }
