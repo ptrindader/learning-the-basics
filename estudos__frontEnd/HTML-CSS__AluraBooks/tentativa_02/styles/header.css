@@ -194,6 +194,14 @@
         font-size: 20px;
         display: block;
     }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+    .container__titulo{
+        margin-right: 1.5em;
+    }
 }
 
 /*Isso é uma MEDIA QUERY, usada para aplicar estilos diferentes para determinados
