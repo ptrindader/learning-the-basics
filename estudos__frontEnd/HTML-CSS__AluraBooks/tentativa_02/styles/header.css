@@ -89,6 +89,10 @@
     align-items: center;
 }
 
+.icone__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .container__titulo,
@@ -175,6 +179,20 @@
     .opcoes__menu-botao:hover .lista-menu {
         display: block;
         width: auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .icone__botao{
+        display: flex;
+        text-decoration: none;
+    }
+    
+    
+    .icone__texto{
+        color: var(--preto);
+        font-size: 20px;
+        display: block;
     }
 }
 
