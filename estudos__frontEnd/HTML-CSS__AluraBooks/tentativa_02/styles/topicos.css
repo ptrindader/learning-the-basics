@@ -45,3 +45,17 @@
         margin: 0 10em;
     }
 }
+
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 5em ;
+    }
+
+    .topicos__lista{
+        margin: 0 25em;
+    }
+
+    .topicos__titulo{
+        margin-top: 0;
+    }
+}
