@@ -50,21 +50,20 @@
     .swiper-button-next,
     .swiper-button-prev {
         color: var(--branco);
+        padding: 1em;
+        align-items: center;
         display: block;
         top: 60%;
-        background: url(../icons/Ellipse\ 3.svg) no-repeat;
-        background-position: center;
-        padding: .5em;
+        background: url(../icons/Ellipse\ 3.svg) no-repeat center;
+        background-size: contain;
     }
-
 }
 
 @media screen and (min-width: 1728px) {
     .carrossel__container {
         display: flex;
-        margin: 5em 10em;
+        align-items: flex-end;
         gap: 5em;
-        align-items: bottom;
     }
 
     .carrossel__titulo {
@@ -89,7 +88,7 @@
 
     .swiper {
         width: 60%;
-        justify-content: center;
+        align-content: center;
     }
 
     .swiper-button-next::after {
