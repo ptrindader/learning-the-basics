@@ -1,0 +1,2 @@
+listaVazia = [];
+console.log(listaVazia);
