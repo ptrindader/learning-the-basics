@@ -6,9 +6,9 @@ function calcularFatorial(numero) {
         return 1;
     }
     
-    let fatorial = 1;
+    let fatorial = numero;
     
-    for (i = 1; i <= numero; i++) {
+    for (i = numero-1; i >= 1; i--) {
         console.log(`${fatorial} x ${i} = ${fatorial * i} `);
         fatorial *= i;
     };
