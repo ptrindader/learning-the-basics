@@ -1,3 +1,2 @@
-const inputItem = document.getElementById('input-item');
-
-console.log(inputItem);
+const inputItem = document.querySelector('h2');
+inputItem.innerHTML = "Aooooooooooooo";
