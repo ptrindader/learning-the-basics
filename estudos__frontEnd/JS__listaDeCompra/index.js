@@ -1,1 +1,3 @@
-console.log('Olá, mundo!');
+const inputItem = document.getElementById('input-item');
+
+console.log(inputItem);
