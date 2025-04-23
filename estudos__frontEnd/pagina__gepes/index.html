@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Gepes Especializada Belo Horizonte - 8928</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-md">
+            <div class="mensagens" id="mensagens">
+                <span class="mensagem">Você é uma peça fundamental para o sucesso da nossa equipe! Sua dedicação e
+                    habilidades são inspiradoras. Lembre-se, cada desafio é uma oportunidade para crescer e aprender.
+                    Continue brilhando e mostrando o seu valor. E se o dia estiver difícil, lembre-se: até os
+                    computadores precisam de um &#039;Ctrl+Alt+Del&#039; de vez em quando!</span>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .letreiro {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .mensagens {
+            display: inline-block;
+            animation: mover 30s linear infinite;
+            /* Ajuste a duração da animação aqui */
+            animation-delay: -5s;
+            /* Ajuste o atraso antes de iniciar a animação aqui */
+            white-space: nowrap;
+        }
+
+        .mensagem {
+            padding: 0 50px;
+            color: rgb(246, 250, 246);
+            /* Altere esta linha para mudar a cor do texto */
+        }
+
+        @keyframes mover {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <script>
+        function atualizarMensagens() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'carregar_avisos.php', true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById('mensagens').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+
+        // Atualizar mensagens a cada 60 segundos
+        setInterval(atualizarMensagens, 60000);
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="index.php">
+            <span class="d-block d-lg-none">Gepes Especializada Belo Horizonte</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="/assets/img/construcao.jpg" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?pagina=sobre.php">Sobre a
+                        Gepes</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                        href="index.php?pagina=equipes.php">Equipes</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                        href="index.php?pagina=pesquisa.php">Ferramentas</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php?pagina=ecoa.php">Ecoa</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                        href="index.php?pagina=ecoa.php">Destaques</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0" id="conteudo">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Gepes Especializada<span class="text-primary">BH</span>
+                </h1>
+                <div class="subheading mb-5">
+                    <a href="mailto:name@email.com">gepesespecbh@bb.com.br</a>
+                </div>
+
+                <div class="form">
+                    <div class='alert alert-info'>Você já votou nesta enquete.</div>
+
+                    <form action="" method="post" class="formulario">
+                        <div class="opcoes__formulario">
+                            <div class="form-group">
+                                <a class="navbar-brand js-scroll-trigger" href="index.php">
+
+                                    <span class="d-none d-lg-block">
+                                </a>
+                                <img src="opcao1.jpg" alt="Opção 1" class="img-thumbnail  rounded-circle mx-auto mb-2"
+                                    onclick="openModal(this.src)"></span>
+
+                                <div class="descricaoEInput">
+                                    <p>Eu e IA, uma parceria de sucesso! </p><input type="radio" name="opcao" value="1">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <img src="opcao2.png" alt="Opção 2" class="img-thumbnail  rounded-circle mx-auto mb-2"
+                                    onclick="openModal(this.src)">
+
+                                <div class="descricaoEInput">
+                                    <p>As cores em cada representam vem com a idéia de diversidade. A cor de fundo
+                                        remete uma
+                                        mistura de azul e amarelo, que são as cores da bandeira de BH. Algo simples e
+                                        Minimalista.
+                                        Um modelo que pode sofrer adaptações e mudança de cores de acordo com o
+                                        interesse </p>
+                                    <input type="radio" name="opcao" value="2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <img src="opcao3.png" alt="Opção 3" class="img-thumbnail  rounded-circle mx-auto mb-2"
+                                    onclick="openModal(this.src)">
+                                <div class="descricaoEInput">
+                                    <p>Igrejinha da Pampulha</p><input class="input__votacao" type="radio" name="opcao"
+                                        value="3">
+                                </div>
+
+                            </div>
+                        </div>
+                        <input type="submit" value="Votar" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Modal para exibir a imagem ampliada -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+
+    <script>
+        // Função para abrir o modal com a imagem ampliada
+        function openModal(src) {
+            document.getElementById('myModal').style.display = "block";
+            document.getElementById('imgModal').src = src;
+        }
+
+        // Função para fechar o modal
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    </script>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
