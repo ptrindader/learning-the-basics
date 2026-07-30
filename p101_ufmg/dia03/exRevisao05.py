@@ -11,6 +11,8 @@ qtde = len(produtos)
 total = sum(produtos)
 media = total / qtde
 
-print(qtde)
-print(total)
-print(media)
+print("")
+print(f"{qtde} produtos.")
+print(f"Valor Total: R$ {total:.2f}")
+print(f"Preço Médio: R$ {media:.2f}")
+print("")
