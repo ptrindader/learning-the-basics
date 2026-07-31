@@ -12,5 +12,4 @@ if y not in vetor:
 else:
     print(f"Sim, {y} está no vetor.")
     indexY = vetor.index(y)
-    vetor.count(indexY)
     print(f"Índice: {indexY}")
