@@ -5,7 +5,6 @@
 
 lista = [int(input()) for _ in range(12)]
 
-<<<<<<< HEAD
 print("")
 print(lista)
 print("")
@@ -23,11 +22,3 @@ for k in lista_nums:
         print(f"O número '{k}' aparece {qtde} vezes.")
     else:
         print(f"O número '{k}' aparece uma vez.")
-=======
-for i in range(0, len(vetor)):
-    a = vetor.count(vetor[i])
-    vetorNobo = set(vetor)
-    print(f"Numero: {vetor[i]}")
-    print(f"Qtde: {a}")
-    print("")
->>>>>>> 76da3919589aa8436ed6cee597598f9a5ba2b4e0
