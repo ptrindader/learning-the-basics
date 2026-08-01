@@ -1,6 +1,8 @@
 vetor = [3, 8, 9, 20, 1]
 vetor.sort()
 print(vetor)
+# Organiza o vetor em ordem crescente. (Para 
+# descrescente, adicionar argumento "ascendent=false") 
 
 mensagem = str(input())
 
