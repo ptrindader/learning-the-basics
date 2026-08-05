@@ -7,9 +7,14 @@ def permutacoes(texto):
             pivo = texto[i]
             resto = texto[:i] + texto[i+1:]
             subperm = permutacoes(resto)
-            lista.append(pivo + subperm)
+            for sub in subperm:
+                palavra_completa = (pivo + sub)
+                if palavra_completa not in lista:
+                    lista.append(palavra_completa)
         return lista
 
-x = input()
+palavra = input()
+lista_final = list(set(permutacoes(palavra)))
 
-print(permutacoes(x))
+print(lista_final)
+print(len(lista_final))
